@@ -5,6 +5,9 @@
   "main": "index.ts",
   "author": "James",
   "license": "MIT",
+  "engines": {
+    "node": "17.x"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "build": "tsc",
