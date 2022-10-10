@@ -34,6 +34,24 @@ const KnexConfig: IKnexConfig = {
       directory: "../migrations",
     },
   },
+  production: {
+    client,
+    connection: {
+      database,
+      user,
+      password,
+      port,
+      host,
+    },
+    pool: {
+      min: 2,
+      max: 10,
+    },
+    migrations: {
+      tableName: "migrations",
+      directory: "../migrations",
+    },
+  },
 };
 
 export default KnexConfig;
