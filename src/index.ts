@@ -25,7 +25,7 @@ const startApp = async () => {
 
   app.use("/v1/", Router);
 
-  const port = env("APP_PORT");
+  const port = env("PORT");
   app.listen(port, async () => {
     logger.info(` #################################################
     🛡️ App listening on port: ${port} 🛡️ 
